@@ -1,1 +1,24 @@
-<a href= “http://www.google.com”>Google Web Search</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Send Email and Redirect</title>
+</head>
+<body>
+    <script>
+    function sendEmailAndRedirect() {
+        // Send an email (replace with your actual email sending code)
+        window.open('mailto:jayden@elevenm.com?subject=Hello&body=Message%20content');
+        
+        // Redirect to Google after a delay (e.g., 3 seconds)
+        setTimeout(function() {
+            window.location.href = 'https://www.google.com';
+        }, 3000); // 3000 milliseconds = 3 seconds
+    }
+
+    // Automatically call the function when the page loads
+    window.onload = sendEmailAndRedirect;
+</script>
+
+</body>
+</html>
